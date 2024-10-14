@@ -1,11 +1,13 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import JobListings from '../components/ProjectListings';
+import ProjectListings from '../components/ProjectListings';
+import ProfileCard from '../components/ProfileCard';
 
 const HomePage = () => {
   return (
     <>
       <Hero />
+      <ProfileCard />
       <ProjectListings isOlder={true} />
       <ProjectListings isOlder={false} />
     </>

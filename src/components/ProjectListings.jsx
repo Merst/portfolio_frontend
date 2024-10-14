@@ -49,4 +49,4 @@ const ProjectListings = ({isOlder = false}) => {
     </>
   )
 }
-export default JobListings
+export default ProjectListings
