@@ -6,7 +6,6 @@ import ProfileCard from '../components/ProfileCard';
 const HomePage = () => {
   return (
     <>
-      <Hero />
       <ProfileCard />
       <ProjectListings isOlder={true} />
       <ProjectListings isOlder={false} />

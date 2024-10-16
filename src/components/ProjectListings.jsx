@@ -9,10 +9,9 @@ const ProjectListings = ({isOlder = false}) => {
 
   useEffect(() => {
     const fetchProjects = async () => {
-      // '/api/projects?_isOlder=true'
-      const apiUrl = isOlder 
-        ? '/api/projects?_limit=3' 
-        : '/api/projects';
+      const apiUrl = isOlder
+        ? '/api/projects/?older_project=true' 
+        : '/api/projects/?older_project=false';
 
       try {
         const res = await fetch(apiUrl);
@@ -40,8 +39,8 @@ const ProjectListings = ({isOlder = false}) => {
 
             {loading 
               ? (<Spinner loading={loading} />) 
-              : (<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {projects.map((project) => (<ProjectListing key={project.id} project={project}/>))}
+              : (<div className="flex flex-col p-6">
+                  {projects.map((project) => (<ProjectListing key={project.url} project={project}/>))}
                 </div>)
             }
         </div>

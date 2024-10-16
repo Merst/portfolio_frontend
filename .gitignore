@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Added by Merst
+
+src/assets/images/plant.jpg
