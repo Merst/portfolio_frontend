@@ -8,7 +8,7 @@ const ProjectListing = ({project}) => {
       <div className="bg-white rounded-xl shadow-md relative mt-4">
         <div className="flex p-4">
           {/* Left part of the box */}
-          <div className="flex-auto w-2">
+          <div className="basis-3/4 border-r border-gray-500">
             <h3 className="mb-6 text-xl font-bold">{project.title}</h3>
             
             <div className="mb-5">{project.summary}</div>
@@ -22,11 +22,8 @@ const ProjectListing = ({project}) => {
             </div>
           </div>
 
-          {/* Cheeky little line */}
-          <div className="border border-gray-500 mr-5"></div>
-
           {/* Right part of the box */}
-          <div className="flex-auto w-14">
+          <div className="basis-1/4 w-14">
             {project.skills.map((skill) => (
               <SkillChip key={project.url + skill.url} skill={JSON.stringify(skill)}/>))}
           </div>
