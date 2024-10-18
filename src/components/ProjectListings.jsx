@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import SkillLegend from './SkillLegend';
 import OlderProjectListings from './OlderProjectListings';
 import RecentProjectListings from './RecentProjectListings';
 

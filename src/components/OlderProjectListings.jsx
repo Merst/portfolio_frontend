@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectListing from './ProjectListing';
+import SkillLegend from './SkillLegend';
 
 const OlderProjectListings = ({projects}) => {
   return (
@@ -17,6 +18,7 @@ const OlderProjectListings = ({projects}) => {
       <div className="flex flex-col p-6">
         {projects.map((project) => (<ProjectListing key={project.url} project={project}/>))}
       </div>
+      <SkillLegend />
     </>
   )
 }
