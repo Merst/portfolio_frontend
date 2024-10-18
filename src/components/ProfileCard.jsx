@@ -7,7 +7,7 @@ import { FaAt, FaPhone, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 const ProfileCard = () => {
   const baseTextStyle = "text-black font-normal text-lg";
   const iconsStyle = "inline text-lg mr-3";
-  const linkStyle = "text-blue-800 underline";
+  const linkStyle = "text-blue-700 hover:text-blue-900 underline";
 
   const myName = `${baseTextStyle} md:text-6xl uppercase mb-2 text-center`;
   const myTitle = `${baseTextStyle} md:text-2xl mb-2 pl-8`;
@@ -35,9 +35,12 @@ const ProfileCard = () => {
                   Montréal, Québec, Canada
                 </p>
 
+                
                 <p>
-                  <FaAt className={iconsStyle} />
-                  stephane.verville.vohl@gmail.com
+                  <NavLink to="mailto:stephane.verville.vohl@gmail.com">
+                    <FaAt className={iconsStyle} />
+                    <span className={linkStyle}>stephane.verville.vohl@gmail.com</span>
+                  </NavLink>
                 </p>
 
                 <NavLink to="https://github.com/Merst">

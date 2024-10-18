@@ -9,12 +9,12 @@ const SkillLegend = () => {
     "Development Tool" : "bg-purple-500",
   };
 
-  const chipBaseStyle = 'center relative inline-block select-none whitespace-nowrap rounded-full py-2 px-3.5 align-baseline font-sans text-xs font-bold leading-none text-white mr-1';
+  const chipBaseStyle = 'center relative inline-block select-none whitespace-nowrap rounded-full py-1 px-3 align-baseline font-sans text-xs font-bold leading-none text-white mr-1';
 
   return (
     <>
-      <div className='py-2'>
-        <span className='mr-2'> Legend: </span>
+      <div className='py-2 pl-4'>
+        <span className='mr-2 text-sm'> Legend: </span>
         <div className={`bg-blue-500 ${chipBaseStyle}`}>
           <div className="mt-px">Programming Language</div>
         </div>

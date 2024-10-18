@@ -8,22 +8,22 @@ const ProjectListing = ({project}) => {
       <div className="bg-white rounded-xl shadow-md relative mt-4">
         <div className="flex p-4">
           {/* Left part of the box */}
-          <div className="basis-3/4 border-r border-gray-500">
+          <div className="basis-4/5 border-r border-gray-500">
             <h3 className="mb-6 text-xl font-bold">{project.title}</h3>
             
             <div className="mb-5">{project.summary}</div>
 
-            <div className="flex flex-col lg:flex-row justify-between mb-4">
+            <div className="flex flex-col lg:flex-row justify-between">
               <Link
                 to={`${project.github_link}`}
-                className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm">
+                className="bg-slate-400 hover:bg-slate-500 text-white px-4 py-2 rounded-lg text-center text-sm">
                   Source Code
               </Link>      
             </div>
           </div>
 
           {/* Right part of the box */}
-          <div className="basis-1/4 w-14">
+          <div className="basis-1/5 pl-2">
             {project.skills.map((skill) => (
               <SkillChip key={project.url + skill.url} skill={JSON.stringify(skill)}/>))}
           </div>

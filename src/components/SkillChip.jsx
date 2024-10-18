@@ -19,7 +19,7 @@ const SkillChip = ({skill}) => {
   return (
     <>
       {/*TODO: varying bg-colors depending on skillData.category_id*/}
-      <div className={` ${background} center relative inline-block select-none whitespace-nowrap rounded-full py-2 px-3.5 align-baseline font-sans text-xs font-bold leading-none text-white mx-1`}>
+      <div className={` ${background} center relative inline-block select-none whitespace-nowrap rounded-full py-1 px-3 align-baseline font-sans text-xs font-bold leading-none text-white mx-0.5`}>
         <div className="mt-px">{skillObj.name}</div>
       </div>
     </>
