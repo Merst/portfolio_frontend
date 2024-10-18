@@ -1,9 +1,13 @@
 import React from 'react';
 import plant from '../assets/images/plant.jpg';
 import { NavLink } from 'react-router-dom';
+import { FaLocationDot} from 'react-icons/fa6';
+import { FaAt, FaPhone, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const ProfileCard = () => {
   const textColour = "text-black";
+  const iconsStyle = "inline text-lg mr-3";
+  const linkStyle = "text-blue-800 underline";
 
   const myName = `${textColour} font-normal text-lg md:text-6xl uppercase mb-2`;
   const myTitle = `${textColour} font-normal text-lg md:text-2xl mb-2 pl-8`;
@@ -20,16 +24,27 @@ const ProfileCard = () => {
               <p className={myName}> Stéphane Verville-Vohl </p>
               <p className={myTitle}> Software Engineer: Data | Cloud | Backend | DevOps </p>
               <div className={myInformations}>
-                <p> Montréal, Québec, Canada </p>
-                <p> stephane.verville.vohl@gmail.com </p>
-                <NavLink to="https://github.com/Merst" className="text-blue">
-                  Github Profile
+                 <p>
+                    <FaLocationDot className={iconsStyle} />
+                    Montréal, Québec, Canada
+                  </p>
+                <p>
+                   <FaAt className={iconsStyle} />
+                   stephane.verville.vohl@gmail.com
+                </p>
+                <NavLink to="https://github.com/Merst">
+                  <FaGithubSquare className={iconsStyle} />
+                  <span className={linkStyle}>Github Profile</span>
                 </NavLink>
                 <br/>
-                <NavLink to="https://www.linkedin.com/in/stephane-verville-vohl/" className="text-blue">
-                  LinkedIn Profile
+                <NavLink to="https://www.linkedin.com/in/stephane-verville-vohl/">
+                  <FaLinkedin className={iconsStyle} />
+                  <span className={linkStyle}>LinkedIn Profile</span>
                 </NavLink>
-                <p> (514) 268-4807</p>
+                <p> 
+                  <FaPhone className={iconsStyle} />
+                  (514) 268-4807
+                </p>
               </div>
             </div>                
           </div>

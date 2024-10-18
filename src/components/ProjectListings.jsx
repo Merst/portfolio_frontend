@@ -30,12 +30,19 @@ const ProjectListings = ({isOlder = false}) => {
     <>
       <section className="bg-slate-100 py-10">
         <div className="container-xl lg:container m-auto">
+          
           <h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
+            Recent projects (2022-present)
+          </h2>
+          <p>
+            This is a list of projects that I've been working on since my recent self-studies.
+            The main objective of the following projects is to practice the various facets of
+            software engineering spanning a wide variety of different technologies. </p>
             {isOlder
-                ? ('Recent projects (2022-present)') 
+                ? ('') 
                 : ('Older projects')
             }
-          </h2>
+          
 
             {loading 
               ? (<Spinner loading={loading} />) 
