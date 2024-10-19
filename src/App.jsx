@@ -2,6 +2,7 @@ import React from 'react';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
+import ResumePage from './pages/ResumePage';
 import {
   Route,
   createBrowserRouter,
@@ -15,6 +16,7 @@ const App = () => {
     createRoutesFromElements(
       <Route path='/' element={<MainLayout />}>
         <Route index element={<HomePage />} />
+        <Route path='/resume' element={<ResumePage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     )

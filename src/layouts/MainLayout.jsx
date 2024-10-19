@@ -6,8 +6,8 @@ import { Outlet } from 'react-router-dom';
 const MainLayout = () => {
   return (
     <>
-      <div className="text-slate-800">
         <Navbar />
+      <div className="text-slate-800 bg-slate-100 px-20">
         <Outlet />
         <Footer />
       </div>

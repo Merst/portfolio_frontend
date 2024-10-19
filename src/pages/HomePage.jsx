@@ -5,7 +5,7 @@ import ProfileCard from '../components/ProfileCard';
 const HomePage = () => {
   return (
     <>
-      <div className='bg-slate-100 px-20'>
+      <div>
         <ProfileCard />
         <ProjectListings />
       </div>
