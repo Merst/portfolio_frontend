@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ProjectListing = ({project}) => {
   return (
     <>
-      <div className="bg-white rounded-xl shadow-md relative mt-4">
+      <div className="text-black bg-white rounded-xl shadow-md relative mt-4">
         <div className="flex p-4">
           {/* Left part of the box */}
           <div className="basis-4/5 border-r border-gray-500">

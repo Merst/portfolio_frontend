@@ -5,7 +5,7 @@ import { FaLocationDot} from 'react-icons/fa6';
 import { FaAt, FaPhone, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const ProfileCard = () => {
-  const baseTextStyle = "text-black font-normal text-lg";
+  const baseTextStyle = "font-normal text-lg";
   const iconsStyle = "inline text-lg mr-3";
   const linkStyle = "text-blue-700 hover:text-blue-900 underline";
 

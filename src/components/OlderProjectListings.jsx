@@ -2,13 +2,13 @@ import React from 'react';
 import ProjectListing from './ProjectListing';
 import SkillLegend from './SkillLegend';
 
-const OlderProjectListings = ({projects, baseTextStyle}) => {
+const OlderProjectListings = ({projects}) => {
   return (
     <>
-      <h2 className={`${baseTextStyle} text-3xl font-bold mt-6`}>
+      <h2 className={`text-center text-3xl font-bold mt-6`}>
         Older Projects
       </h2>
-      <p className={`${baseTextStyle} mx-2 my-6`}>
+      <p className={`text-center mx-2 my-6`}>
         Most of the following projects were developped during my Bachelor's 
         degree at Université de Montréal, either alone or in teams of up to 6.
         My upcoming plans for these projects is to either fleshen them out, 

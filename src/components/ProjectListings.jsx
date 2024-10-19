@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import SkillLegend from './SkillLegend';
 import OlderProjectListings from './OlderProjectListings';
 import RecentProjectListings from './RecentProjectListings';
 
@@ -22,14 +21,13 @@ const ProjectListings = () => {
   
   let recentProjects = projects.filter(project => !project.older_project);
   let olderProjects = projects.filter(project => project.older_project);
-  const textStyle = "text-slate-700 text-center";
 
   return (
     <>
       <section className="bg-slate-100">
         <div className="container-xl lg:container m-auto">
-          <RecentProjectListings projects={recentProjects} baseTextStyle={textStyle} />
-          <OlderProjectListings projects={olderProjects} baseTextStyle={textStyle} />
+          <RecentProjectListings projects={recentProjects} />
+          <OlderProjectListings projects={olderProjects} />
         </div>
       </section>
     </>
