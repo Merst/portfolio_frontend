@@ -25,7 +25,7 @@ const Navbar = () => {
                     Home
                   </NavLink>
                   <NavLink to="/projects" className={linkClass}>
-                    Projects
+                    Project Demos
                   </NavLink>
                   <NavLink to="/resume" className={linkClass}>
                     Get my resume
