@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+
+  portfolio-ui:
+    image: portfolio-frontend:v1.0.0
+    ports:
+      - "8080:80"
