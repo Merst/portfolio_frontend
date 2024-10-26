@@ -9,7 +9,7 @@ const ProjectListings = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch('/api/projects/');
+        const res = await fetch('http://0.0.0.0:8000/projects/');
         const data = await res.json();
         setProjects(data);
       } catch (error) {

@@ -19,6 +19,6 @@ COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 COPY resume.pdf /usr/share/nginx/html
 
-EXPOSE 88
+EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
